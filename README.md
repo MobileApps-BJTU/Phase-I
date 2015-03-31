@@ -3,9 +3,6 @@ To see the detail of our project : https://github.com/Moirai7/Android_HW .
 
 We commit our files to a new branch and then zhanglan merge those file to her local branch by Command Line.After that,she commit those file use her Git ID,so there just show her commits.
 
-Sorry to bother you.
-
-
     Nowadays, with the growth of the world population,it's not rare to meet blind or deaf people when we walk around. They may meet a variety of problems because of the defect in their body.
     For example:deaf people need sign language when communicating, however, most normal person haven't learned sign language,while blind can communicate only by speaking or braille, but most of the current devices does not support that. Because of all these problems, it is way more difficult for them to communicate.
     So, in order to bring convenience to this special crowd and those normal person who have interest in the special crowd, we develop this APP. It works for:
