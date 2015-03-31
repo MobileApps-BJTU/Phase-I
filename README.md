@@ -1,5 +1,5 @@
 # Phase-2
-To see the detail of our project : https://github.com/Moirai7/Android_HW
+To see the detail of our project : https://github.com/Moirai7/Android_HW .
 
 
     Nowadays, with the growth of the world population,it's not rare to meet blind or deaf people when we walk around. They may meet a variety of problems because of the defect in their body.
