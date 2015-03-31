@@ -30,10 +30,10 @@ import android.view.Window;
 import android.widget.Toast;
 
 public abstract class BaseActivity extends FragmentActivity  {
-	// 将生成的Activity都放到LinkList集合中
-	protected static LinkedList<BaseActivity> queue = new LinkedList<BaseActivity>();
-	public static Conmmunication con;
-	public static Database db;
+// 将生成的Activity都放到LinkList集合中
+    protected static LinkedList<BaseActivity> queue = new LinkedList<BaseActivity>();
+    public static Conmmunication con;
+    public static Database db;
     // 语音识别对象。
     private SpeechRecognizer mIat;
     private Toast mToast;
