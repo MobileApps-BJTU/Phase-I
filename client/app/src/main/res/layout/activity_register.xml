@@ -1,0 +1,95 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_background"
+    tools:context="com.moirai.view.RegisterActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo_eyes"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/register_message_layout"/>
+
+    <LinearLayout
+        android:id="@+id/register_message_layout"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/register_id_EditView"
+            android:background="@mipmap/login_username"
+            android:inputType="text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:hint="@string/tip_enter_id"
+            android:textColor="#ffffff"
+          />
+
+        <EditText
+            android:id="@+id/register_password1_EditView"
+            android:background="@mipmap/login_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:hint="@string/tip_enter_pw1"
+            android:inputType="textPassword"
+            android:layout_alignLeft="@id/register_id_EditView"
+            android:layout_alignStart="@id/register_id_EditView"
+            android:layout_alignRight="@id/register_id_EditView"
+            android:textColor="#ffffff"
+            />
+
+        <EditText
+            android:id="@+id/register_password2_EditView"
+            android:background="@mipmap/login_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:hint="@string/tip_enter_pw2"
+            android:inputType="textPassword"
+            android:layout_alignLeft="@id/register_id_EditView"
+            android:layout_alignStart="@id/register_id_EditView"
+            android:layout_alignRight="@id/register_id_EditView"
+            android:textColor="#ffffff"
+
+            />
+
+        <Button
+            android:id="@+id/register_createButton"
+            android:background="@mipmap/register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_btn"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="40dp"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/register_gotoLogin_btn"
+            android:background="@mipmap/register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_goto_login"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+      </LinearLayout>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        android:background="@android:color/transparent"
+        android:id="@+id/register_jBlindView"/>
+</RelativeLayout>

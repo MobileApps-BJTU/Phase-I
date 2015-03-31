@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.moirai.view.TalkActivity">
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:scrollbars="none"
+        android:background="#ffffff"
+        android:layout_above="@+id/talk_btn_layout"
+        android:cacheColorHint="#00000000"/>
+
+    <LinearLayout
+        android:id="@+id/talk_btn_layout"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#9F9F9F"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/talk_cameraIbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/camera"/>
+        <!--<ImageButton-->
+            <!--android:id="@+id/talk_text_voice_imageBtn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:background="@drawable/tabchat_selected"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--/>-->
+        <EditText
+            android:id="@+id/talk_editView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/talk_editview"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="#818181"
+            android:textCursorDrawable="@null"
+            />
+        <Button
+            android:id="@+id/talk_sendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/talk_send_btn"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp"
+            android:textColor="#818181"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="@string/talk_send_message"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/talk_jblind"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        android:background="@android:color/transparent"/>
+</RelativeLayout>

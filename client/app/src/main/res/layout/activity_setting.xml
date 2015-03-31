@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/login_background"
+    android:gravity="center_horizontal">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setting"
+        android:textSize="9pt"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#ffffff" />
+
+    <RadioGroup android:id="@+id/radioGroup"
+        android:contentDescription="@string/type_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+
+        <RadioButton android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/type_choice0"
+            android:text="@string/type_choice0"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio"></RadioButton>
+
+        <RadioButton android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/type_choice1"
+            android:text="@string/type_choice1"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/radio"
+            android:layout_marginTop="50dp"></RadioButton>
+
+        <RadioButton android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/type_choice2"
+            android:text="@string/type_choice2"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/radio"
+            android:layout_marginTop="50dp"></RadioButton>
+    </RadioGroup>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        android:background="@android:color/transparent"
+        android:id="@+id/hblindviewsetting"/>
+</RelativeLayout>
